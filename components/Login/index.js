@@ -30,7 +30,7 @@ function Login() {
         <div data-aos="fade-up" className=" p-10">
           <button
             onClick={authenticate}
-            className="bg-yellow-500 rounded-lg p-5 font-bold"
+            className="bg-gradient-to-r from-blue-500 bg-fuchsia-600 rounded-lg p-5 font-bold"
           >
             <div className="flex items-center">
               <div className="mr-5">
