@@ -19,38 +19,24 @@ function Login() {
       <div className="flex  flex-col absolute items-center z-50 h-screen  space-y-4 justify-center w-full">
         <div
           className={`${Style.glitch} uppercase wrapper text-white`}
-          style={{
-            fontSize: "160px",
-
-            fontWeight: "bolder",
-          }}
+         
         >
-          <p className="glitch">
-            <span aria-hidden="true">Welcome to Metaverse </span> 
+          <p className="glitch  xl:text-9xl lg:text-8xl md:text-7xl sm:text-5xl text-xs">
+            <span aria-hidden="true">Welcome to Metaverse </span>
             Welcome to Metaverse
             <span aria-hidden="true">Welcome to Metaverse </span>
           </p>
         </div>
-        <div div data-aos="zoom-in" className="mt-10">
-          {" "}
-          {/* <Image
-              className="object-cover  rounded-full"
-              src={Me}
-              height={200}
-              width={200}
-            /> */}
-        </div>
-        <div data-aos="fade-up" className="mt-5">
+        <div data-aos="fade-up" className="p-10">
           <button
             onClick={authenticate}
             className="bg-yellow-500 rounded-lg p-5 font-bold"
           >
             <div className="flex items-center">
               <div className="mr-5">
-                {" "}
                 <Image src={Wallet} height={40} width={40} />
               </div>
-              <h1 style={{ fontSize: "16px" }}>Connect your wallet</h1>
+              <h1 className="  xl:text-xl lg:text-lg md:text-lg sm:text-lg">Connect your wallet</h1>
             </div>
           </button>
         </div>
