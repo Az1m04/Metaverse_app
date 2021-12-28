@@ -21,13 +21,13 @@ function Login() {
           className={`${Style.glitch} uppercase wrapper text-white`}
          
         >
-          <p className="glitch  xl:text-9xl lg:text-8xl md:text-7xl sm:text-5xl text-xs">
+          <p className="glitch ">
             <span aria-hidden="true">Welcome to Metaverse </span>
             Welcome to Metaverse
             <span aria-hidden="true">Welcome to Metaverse </span>
           </p>
         </div>
-        <div data-aos="fade-up" className="p-10">
+        <div data-aos="fade-up" className=" p-10">
           <button
             onClick={authenticate}
             className="bg-yellow-500 rounded-lg p-5 font-bold"
@@ -36,7 +36,7 @@ function Login() {
               <div className="mr-5">
                 <Image src={Wallet} height={40} width={40} />
               </div>
-              <h1 className="  xl:text-xl lg:text-lg md:text-lg sm:text-lg">Connect your wallet</h1>
+              <h1 className={`${Style.but_}`}>Connect your wallet</h1>
             </div>
           </button>
         </div>
