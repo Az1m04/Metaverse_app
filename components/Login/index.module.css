@@ -34,6 +34,7 @@
   opacity: 0.75;
 }
 
+
 @keyframes glitch {
   0% {
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
@@ -65,55 +66,3 @@
   }
 }
 
-
-@media (min-width: 600px) {
-  .glitch {
-    font-size: 4em;
-    text-align: center;
-  }
-  .but_ {
-    font-size: 1em;
-  }
-}
-
-@media (min-width:300px) {
-  .glitch {
-    font-size: 2em;
-    text-align: center;
-  }
-  .but_ {
-    font-size: 1em;
-  }
-}
-
-@media(min-width: 1288px) {
-  .glitch {
-    font-size: 6em;
-    text-align: center;
-  }
-  .but_ {
-    font-size: 1.5em;
-  }
-}
-
-
-
-@media (min-width: 1590px) {
-  .glitch {
-    font-size: 8em;
-    text-align: center;
-  }
-  .but_ {
-    font-size: 1.5em;
-  }
-}
-
-@media  (min-width: 2601px) {
-  .glitch {
-    font-size: 10em;
-    text-align: center;
-  }
-  .but_ {
-    font-size: 1.5em;
-  }
-}

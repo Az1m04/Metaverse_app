@@ -17,26 +17,22 @@ function Login() {
   return (
     <div className="bg-black relative  ">
       <div className="flex  flex-col absolute items-center z-50 h-screen  space-y-4 justify-center w-full">
-        <div
-          className={`${Style.glitch} uppercase wrapper text-white`}
-         
-        >
-          <p className="glitch ">
+        <div className={`${Style.glitch} uppercase wrapper text-white`}>
+          <p className="glitch  text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl">
             <span aria-hidden="true">Welcome to Metaverse </span>
             Welcome to Metaverse
             <span aria-hidden="true">Welcome to Metaverse </span>
           </p>
         </div>
-        <div data-aos="fade-up" className=" p-10">
+        <div data-aos="fade-up" className={`pt-5`}>
+        
           <button
             onClick={authenticate}
-            className="bg-gradient-to-r from-blue-500 bg-fuchsia-600 rounded-lg p-5 font-bold"
+            className={`bg-pink-500 rounded shadow-lg hover:-translate-y-1 hover:bg-pink-400 hover:shadow-pink-500/60  duration-300  uppercase text-white font-bold p-1 sm:p-1 md:p-2 lg:p-2 xl:p-4 `}
           >
             <div className="flex items-center">
-              <div className="mr-5">
-                <Image src={Wallet} height={40} width={40} />
-              </div>
-              <h1 className={`${Style.but_}`}>Connect your wallet</h1>
+           
+              <h1 className={`text-xs sm:text-sm md:text-md lg:text-lg xl:text-lg`}>Connect your wallet</h1>
             </div>
           </button>
         </div>
