@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useMoralis } from "react-moralis";
 import Me from "../../public/img/azim.jpg";
 import BG from "../../public/img/bg.jpg";
-import Wallet from "../../public/img/wallet.svg";
 import Particles from "react-tsparticles";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,11 +1,15 @@
 import React from "react";
 import { useMoralis } from "react-moralis";
 import Avatar from "../Avatar";
-import TimeAgo from 'timeago-react'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+dayjs.extend(relativeTime)
+
 
 function UserMessage({ message }) {
   const { user } = useMoralis();
   const isUserMessage = message?.get("ethAddress") === user?.get("ethAddress");
+  
   return (
     <div
       className={`flex items-end space-x-2 relative ${
@@ -24,7 +28,9 @@ function UserMessage({ message }) {
       >
         <p>{message.get("message")}</p>
       </div>
-      <TimeAgo className={`text-[10px] italic text-gray-400 ${isUserMessage && 'order-first pr-1'}`} datatime={message.createdAt} />
+      <div className={`text-[10px] italic text-gray-400 ${isUserMessage && 'order-first pr-1'}`}>
+      {dayjs(message.createdAt).fromNow()}
+      </div>
       <p
         className={` absolute -bottom-5 text-xs ${
           isUserMessage ? `text-pink-300 ` : `text-blue-400 `

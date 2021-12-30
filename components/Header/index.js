@@ -16,19 +16,11 @@ function Header() {
         <div className="font-bold hidden lg:inline-grid text-xl absolute top-5 left-5">
           <button
             onClick={() => logout()}
-            className="text-pink-400 capitalize  hover:text-pink-500 hover:border-pink-500 hover:border-b"
+            className="text-pink-400 capitalize  hover:text-pink-500 hover:border-pink-500 "
           >
-           {`<- logout`}
+<img width={'50px'} src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/ffffff/external-smartphone-with-logout-option-with-sign-off-arrow-development-tritone-tal-revivo.png" alt='Logout' />  
           </button>
         </div>
-        {/* <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
-          <Image
-            objectFit="cover"
-            className="rounded-full"
-            src={ME}
-            layout="fill"
-          />
-        </div> */}
         <div className="col-span-4">
           <div className="h-48 w-48 relative lg:mx-auto border-pink-500 border-8 rounded-full">
             <Avatar logoutOnPress />
